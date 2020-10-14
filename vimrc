@@ -1,6 +1,8 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
+syntax on
+
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -18,7 +20,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'ervandew/supertab'
-" Plugin 'davidhalter/jedi-vim'
+Plugin 'davidhalter/jedi-vim'
 
 
 " All of your Plugins must be added before the following line
@@ -36,8 +38,6 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
-set number
-
 nnoremap <silent> <F5> :NERDTree<CR>
 " Add spaces after comment delimiters by default
 let g:NERDSpaceDelims = 1
@@ -51,12 +51,14 @@ set softtabstop=4
 set shiftwidth=4        " number of spaces to use for auto indent
 set autoindent          " copy indent from current line when starting a new line
 set hlsearch
+set number
 " Enable cursor line position tracking:
 :set cursorline
 " Remove the underline from enabling cursorline:
 :highlight clear CursorLine
 " Set line numbering to COLOR background:
 :highlight CursorLineNR ctermbg=cyan
+
 
 " turn off/on 
 let &t_SI .= "\<Esc>[?2004h"
@@ -94,3 +96,6 @@ nnoremap <Esc>8 8gt
 nnoremap <Esc>9 9gt
 nnoremap <Esc><Left> gT
 nnoremap <Esc><Right> gt
+
+" only for python files
+autocmd FileType python set colorcolumn=100
