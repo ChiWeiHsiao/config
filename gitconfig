@@ -1,0 +1,10 @@
+[user]
+	name = ChiWeiHsiao
+	email = kiwi010379@gmail.com
+[alias]
+	co = checkout
+	st = status
+	ci = commit
+    cia = commit --amend --no-edit
+    cp = cherry-pick
+    tree = log --graph --decorate --pretty=oneline --abbrev-commit
