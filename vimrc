@@ -99,3 +99,6 @@ nnoremap <Esc><Right> gt
 
 " only for python files
 autocmd FileType python set colorcolumn=100
+
+" jedi-vim
+let g:jedi#show_call_signatures = "0"
