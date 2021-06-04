@@ -83,6 +83,9 @@ function! XTermPasteBegin()
   return ""
 endfunction
 
+" go to previous position with Shift-tab
+nnoremap <S-Tab> <C-o>
+
 "let mapleader = ","
 "let g:mapleader = ","
 "nnoremap x "_x
