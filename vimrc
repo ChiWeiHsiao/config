@@ -20,6 +20,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'ervandew/supertab'
+Plugin 'mkitt/tabline.vim'
 Plugin 'davidhalter/jedi-vim'
 
 
