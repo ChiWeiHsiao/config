@@ -45,20 +45,19 @@ let g:NERDSpaceDelims = 1
 " --------------------------------------------------------------------------------
 " configure editor with tabs and nice stuff...
 " --------------------------------------------------------------------------------
-set expandtab           " enter spaces when tab is pressed
-set textwidth=120       " break lines when line length increases
-set tabstop=4           " use 4 spaces to represent tab
+set expandtab  " enter spaces when tab is pressed
+set textwidth=120  " break lines when line length increases
+set tabstop=4 " use 4 spaces to represent tab
 set softtabstop=4
-set shiftwidth=4        " number of spaces to use for auto indent
-set autoindent          " copy indent from current line when starting a new line
+set shiftwidth=4  " number of spaces to use for auto indent
+set autoindent  " copy indent from current line when starting a new line
 set hlsearch
 set number
-" Enable cursor line position tracking:
-:set cursorline
-" Remove the underline from enabling cursorline:
-:highlight clear CursorLine
-" Set line numbering to COLOR background:
-:highlight CursorLineNR ctermbg=cyan
+set showtabline=2  " constantly show tabline
+set laststatus=2  " constantly show filepath
+set cursorline  " enable cursor line position tracking
+highlight clear CursorLine  " remove the underline from enabling cursorline
+highlight CursorLineNR ctermbg=cyan  " set line numbering to COLOR background
 
 " Search for visual-selected text, forwards *, backwards #.
 vnoremap <silent> * :<C-U>
