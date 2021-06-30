@@ -21,6 +21,7 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'ervandew/supertab'
 Plugin 'mkitt/tabline.vim'
+Plugin 'tpope/vim-eunuch'
 Plugin 'davidhalter/jedi-vim'
 
 
