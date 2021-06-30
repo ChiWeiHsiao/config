@@ -21,6 +21,7 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'ervandew/supertab'
 Plugin 'mkitt/tabline.vim'
+Plugin 'airblade/vim-gitgutter'
 Plugin 'tpope/vim-eunuch'
 Plugin 'davidhalter/jedi-vim'
 
@@ -120,3 +121,17 @@ autocmd FileType python set colorcolumn=100
 
 " jedi-vim
 let g:jedi#show_call_signatures = "0"
+
+" gitgutter
+set signcolumn=yes
+let g:gitgutter_sign_allow_clobber = 1 
+ab dbm let g:gitgutter_diff_base = 'master'
+ab dbh let g:gitgutter_diff_base = 'head'
+" gitgutter sign color
+highlight SignColumn guibg=black ctermbg=black
+highlight GitGutterAdd    guibg=#000000 ctermbg=black
+highlight GitGutterChange guibg=#000000 ctermbg=black
+highlight GitGutterDelete guibg=#000000 ctermbg=black
+highlight GitGutterAdd    guifg=#00ff00 ctermfg=green
+highlight GitGutterChange guifg=#ffffff ctermfg=white
+highlight GitGutterDelete guifg=#ff0000 ctermfg=red
