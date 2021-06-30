@@ -59,6 +59,9 @@ set cursorline  " enable cursor line position tracking
 highlight clear CursorLine  " remove the underline from enabling cursorline
 highlight CursorLineNR ctermbg=cyan  " set line numbering to COLOR background
 
+" Special settings for a FileType
+autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
+
 " Search for visual-selected text, forwards *, backwards #.
 vnoremap <silent> * :<C-U>
   \let old_reg=getreg('"')<Bar>let old_regtype=getregtype('"')<CR>
