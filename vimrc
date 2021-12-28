@@ -121,6 +121,7 @@ autocmd FileType python set colorcolumn=100
 
 " jedi-vim
 let g:jedi#show_call_signatures = "0"
+let g:jedi#use_tabs_not_buffers = 1
 
 " gitgutter
 set signcolumn=yes
