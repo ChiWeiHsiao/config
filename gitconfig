@@ -8,5 +8,7 @@
     cia = commit --amend --no-edit
     cp = cherry-pick
     tree = log --graph --decorate --pretty=oneline --abbrev-commit
+    df = diff --no-index
+    showpath = show --pretty="format:" --name-only
 [core]
     excludesfile = ~/.gitignore_global
